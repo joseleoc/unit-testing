@@ -1,0 +1,25 @@
+<ion-item *ngIf="character">
+  <ion-avatar slot="start">
+    <img [src]="character.image" />
+  </ion-avatar>
+  <div>
+    <ion-label class="character-name">
+      {{ character.name }}
+    </ion-label>
+    <ion-label>
+      {{ character.gender }}
+    </ion-label>
+    <ion-label>
+      {{ character.species }}
+    </ion-label>
+    <ion-label>
+      Origin: {{ character.origin.name }}
+    </ion-label>
+    <ion-label>
+      Status: {{ character.status }}
+    </ion-label>
+  </div>
+  <ion-label slot="end">
+    {{ character.id }}
+  </ion-label>
+</ion-item>
